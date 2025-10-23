@@ -45,6 +45,16 @@ let userIDTime = "";
 let proxyIPPool = [];
 let path = '/?ed=2560';
 let 动态UUID;
+let UUID = 'b0b99bc4-29fd-4636-a5ff-f214125a1555';
+let ADD = [
+	'127.0.0.1:1234#PC本机',
+	'192.168.1.6:1234#CPC内网',
+	'192.168.50.78:1234#HPC内网',
+	'192.168.4.1:443#飞牛内网',
+	'183.251.223.39:1234#飞牛外网',
+	'183.251.223.39:1235#PC外网',
+	'27.158.105.194:1234#HPC外网',
+];
 let link = [];
 let banHosts = [atob('c3BlZWQuY2xvdWRmbGFyZS5jb20=')];
 export default {
@@ -2192,4 +2202,5 @@ async function KV(request, env, txt = 'ADD.txt') {
 			headers: { "Content-Type": "text/plain;charset=utf-8" }
 		});
 	}
+
 }
